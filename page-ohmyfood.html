@@ -8,11 +8,14 @@
     <script src="https://kit.fontawesome.com/6ed5e82bde.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="C:\Users\nicol\Miweb\main.css\style-page-accueil.css">
+    
+  </head>
 
-</head>
-
-<body>
+<body onload="myFunction()" >
+    
+  <div id="loader"></div>
+  <div id="mySection"  class="animate-bottom">
     <header>
         <h1>ohmyfood</h1>
     </header>
@@ -52,7 +55,7 @@
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
             <div class="restaurant__cards">
-              <a href="pages_menu/la-palette-du-gout.html">
+              <a href="C:\Users\nicol\Miweb\pages_menu\la palette du goût.html">
                 <div class="restaurant__card">
                     <div class="restaurant__card-image">
                       <div class="restaurant__card-new"><p>Nouveau</p></div>
@@ -95,10 +98,10 @@
                     </div>
                 </div>
               </a>
-              <a href="pages_menu/la-note-enchantee.html">
+              <a href="C:\Users\nicol\miweb\pages_menu\la note enchantée.html">
                 <div class="restaurant__card">
                     <div class="restaurant__card-image">
-                      <img src="img/restaurant2.jpg" alt="La note enchantée">
+                      <img src="img/restaurant3.jpg" alt="La note enchantée">
                       <div class="restaurant__card-new"><p>Nouveau</p></div>
                     </div>
                     <div class="restaurant__block">
@@ -138,10 +141,10 @@
                     </div>
                 </div>
               </a>
-                <a href="pages_menu/a-la-francaise.html">
+                <a href="C:\Users\nicol\Miweb\pages_menu\A la française.html">
                 <div class="restaurant__card">
                   <div class="restaurant__card-image">
-                    <img src="img/restaurant3.jpg" alt="À la française">
+                    <img src="img/restaurant4.jpg" alt="À la française">
                   </div>
                     <div class="restaurant__block">
                         <div class="restaurant__block-info">
@@ -180,10 +183,10 @@
                     </div>
                 </div>
               </a>
-              <a href="pages_menu/le-delice-des-sens.html">
+              <a href="C:\Users\nicol\Miweb\pages_menu\Le délice des sens.html">
                 <div class="restaurant__card">
                   <div class="restaurant__card-image">
-                    <img src="img/restaurant4.jpg" alt="Le délice des sens">
+                    <img src="img/restaurant2.jpg" alt="Le délice des sens">
                   </div>
                     <div class="restaurant__block">
                         <div class="restaurant__block-info">
@@ -229,7 +232,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__bloc">
-      <div class="logo"><a href="index.html">ohmyfood</a></div>
+      <div class="logo"><a href="C:\Users\nicol\Miweb\page-ohmyfood.html">ohmyfood</a></div>
       <div class="footer__bloc-links">
         <div class="footer__bloc-link">
           <i class="fas fa-utensils"></i>
@@ -247,7 +250,22 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 800);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+    
+
 </body>
 
 </html>
