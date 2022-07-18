@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6ed5e82bde.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
-
     <link rel="stylesheet" href="index.css">
-    
   </head>
 
-<body onload="myFunction()" >
-    
-  <div id="loader"></div>
+<body>
+  <div class="loader">
+    <div class="itemcontainer">
+      <div class="loader__item--1"></div>
+      <div class="loader__item--2"></div>
+      <div class="loader__item--3"></div>
+    </div>
+  </div>
+  
   <div id="mySection"  class="animate-bottom">
     <header>
         <h1>ohmyfood</h1>
@@ -55,7 +58,7 @@
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
             <div class="restaurant__cards">
-              <a href="la palette de goût.html">
+              <a href="la-palette-de-goût.html">
                 <div class="restaurant__card">
                     <div class="restaurant__card-image">
                       <div class="restaurant__card-new"><p>Nouveau</p></div>
@@ -98,7 +101,7 @@
                     </div>
                 </div>
               </a>
-              <a href="la note enchantée.html">
+              <a href="la-note-enchantée.html">
                 <div class="restaurant__card">
                     <div class="restaurant__card-image">
                       <img src="img/restaurant3.jpg" alt="La note enchantée">
@@ -141,7 +144,7 @@
                     </div>
                 </div>
               </a>
-                <a href="A la française.html">
+                <a href="A-la-française.html">
                 <div class="restaurant__card">
                   <div class="restaurant__card-image">
                     <img src="img/restaurant4.jpg" alt="À la française">
@@ -183,7 +186,7 @@
                     </div>
                 </div>
               </a>
-              <a href="les delices des sens.html">
+              <a href="les-delices-des-sens.html">
                 <div class="restaurant__card">
                   <div class="restaurant__card-image">
                     <img src="img/restaurant2.jpg" alt="Le délice des sens">
@@ -250,20 +253,8 @@
         </div>
       </div>
     </div>
+  </footer>
   </div>
-
-  <script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 800);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
     
 
 </body>
