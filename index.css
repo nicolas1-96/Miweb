@@ -4,7 +4,9 @@
 body{
     font-family: "Roboto",sans-serif;
     margin: 0px;
+    
 }
+/*loader spinner*/
 .loader {
   position: fixed;
   height: 100%;

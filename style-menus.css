@@ -217,6 +217,9 @@ position: absolute;
 
 .menu-case-plato .menu-case-plato-titulo {
  margin: 0;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+ overflow: hidden;
 
 }
 
